@@ -1,0 +1,14 @@
+version: '3'
+services:
+  api:
+    build:
+      context: api
+    restart: always
+    ports:
+      - 127.0.0.1:3300:3300
+  ui:
+    build:
+      context: ui
+    restart: always
+    ports:
+      - 127.0.0.1:3000:80
